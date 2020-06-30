@@ -1,0 +1,12 @@
+name: Update copyright year(s) in license file
+
+on: push
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update license copyright year(s)
+        uses: FantasticFiasco/action-update-license-year@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}a
